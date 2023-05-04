@@ -1,0 +1,31 @@
+// Configure bundling and minification for the project.
+// More info at https://go.microsoft.com/fwlink/?LinkId=808241
+[
+  {
+    "outputFileName": "Content/site.css",
+    // An array of relative input file paths. Globbing patterns supported
+    "inputFiles": [
+      "Content/_site.css",
+      "Content/app.css"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/site.js",
+    "inputFiles": [
+      "lib/modernizr/modernizr.js",
+      "lib/jquery/jquery.js",
+      "lib/jquery-validate/jquery.validate.js",
+      "lib/jquery-validate/additional-methods.js",
+      "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
+      "lib/bootstrap/js/bootstrap.bundle.js",
+      "lib/font-awesome/js/all.js"
+    ],
+    // Optionally specify minification options
+    "minify": {
+      "enabled": true,
+      "renameLocals": false
+    },
+    // Optionally generate .map file
+    "sourceMap": false
+  }
+]
